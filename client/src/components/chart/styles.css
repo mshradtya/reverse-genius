@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .newNode {
+  border: 10px solid red !important;
+} */
+
+.highlighted {
+  /* border: 10px solid #007bff; */
+  border: 10px solid #304497 !important;
+}
+
+.searchedNode {
+  /* border: 10px solid #007bff; */
+  border: 10px solid #4caf50 !important;
+}
+
+.gg {
+  margin: auto;
+}
+
+.org-chart {
+  height: calc(100vh - 60px);
+}
+.org-chart > svg {
+  height: 100%;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.node-container {
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #304497;
+  border-radius: 1rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+  cursor: pointer;
+
+  z-index: -1 !important;
+}
+
+.node-container:hover {
+  background-color: white;
+  /* border: 2px solid #007bff; */
+  border: 2px solid #304497;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.link {
+  background-color: pink !important;
+  /* stroke: #007bff !important; */
+  stroke: #304497 !important;
+}
+
+.node-details {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: -1 !important;
+  align-items: center;
+  position: relative;
+}
+
+.newNode {
+  /* border: 10px solid #007bff; */
+  border: 5px dashed #304497;
+}
+.node-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: -1 !important;
+  /* color: #007bff; */
+  color: #304497;
+}
+
+.contanier {
+  width: 100vw;
+  height: 90vh;
+}
+
+.con-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.node-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 6px;
+  border-radius: 1rem;
+  z-index: -1 !important;
+}
+.node-info {
+  width: 100%;
+  color: #33333b;
+  display: flex;
+  flex-direction: column;
+}
+.node-name {
+  padding-bottom: 0.3rem;
+  text-overflow: ellipsis;
+  font-size: 2rem;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.expand-btn {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  /* color: #227c9d; */
+  color: #304497;
+  background-color: #fef9ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid #007bff; */
+  border: 2px solid #304497;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.expand-btn > span:last-child {
+  display: flex;
+}
